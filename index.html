@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\Style.css">
+    <link rel="stylesheet" href=".\Stylesheet1.css" <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>BanoQabil</title>
+    <!-- For modern browsers (including iOS) -->
+    <link rel="apple-touch-icon" href="Images/logo.png">
+
+    <!-- For most browsers, including IE and Edge -->
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+
+        .underline-img {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .underline-img img {
+            position: absolute;
+            bottom: -20px;
+            /* Adjust the vertical position as needed */
+            left: 45;
+            height: 30px;
+            border-bottom: none;
+        }
+
+        .card-container {
+            background-color: black;
+            display: flex;
+            align-content: justify;
+            padding: 10px;
+
+        }
+
+        .card-body {
+            background-color: black;
+        }
+
+        .card-text {
+            color: white;
+            font-size: small;
+            width: 100%;
+        }
+
+        h3 {
+            color: rgb(73, 121, 110);
+
+        }
+
+        h5 {
+            color: white;
+            text-decoration: underline color(srgb rgb(51, 126, 107));
+            line-height: 0.8em;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        hr {
+            border-color: white;
+            font-weight: bold;
+        }
+
+        .card {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 5px;
+            background-color: black;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #5d867d;
+            /* Twitter color */
+        }
+
+        /* Add styles for LinkedIn and Facebook icons */
+        .social-icons a.linkedin:hover {
+            color: #5d867d;
+            /* LinkedIn color */
+        }
+
+        .social-icons a.facebook:hover {
+            color: #5d867d;
+            /* Facebook color */
+        }
+
+        .BQ-Footer-3 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card-container {
+                padding: 5px;
+            }
+
+            .BQ-Footer,
+            .BQ-Footer-2,
+            .BQ-Footer-3 {
+                width: 100%;
+            }
+
+            .BQ-Footer-3 .card {
+                width: 100%;
+            }
+        }
+        .slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 50px auto;
+    overflow: hidden; /* Ensure the cards don't overflow */
+    margin: 1%;
+    padding: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card1 {
+    min-height: 200px;
+    min-width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #508377;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+   
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev-btn,
+.next-btn {
+    background-color: transparent;
+    color: #fcfcfc;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #070a0a;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .slider-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card1 {
+        padding: 10px;
+    }
+}
+       
+    </style>
+</head>
+
+<body>
+    <!-- Top Moving Text -->
+    <div class="strip">
+        <div class="moving-text-container">
+            <!-- WhatsApp icon and moving text -->
+            <div class="moving-text">
+                TO RESOLVE YOUR <b>QUERIES</b>, PLEASE DIAL OUR HELPLINE NUMBER <b>021-38282263</b> | <i
+                    class="fab fa-whatsapp whatsapp-icon"></i> Whatsapp us at <b>0317-8226242</b>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#" style="padding:0;"> <img src="Images/logo.png" alt="Your Logo"
+                    style="max-height: 70px;" ; class="d-inline-block align-top img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="Intoduction.html">Introduction</a></li>
+                            <li><a class="dropdown-item " href="Director-message.html">Director Message</a></li>
+                            <li><a class="dropdown-item " href="Management-Team.html">Management Team</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="Registration-Form.html">BanoQabil 3.0</a></li>
+                        </ul>
+                        <ul class="dropdown-menu"></ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#our-courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Campuses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="File - video.html">Videos</a></li>
+                            <li><a class="dropdown-item " href="File - image.html">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">FAQs</a>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success bg-white" type="submit"><a href="Donation-Form.html">
+                            Donate</a></button>
+                </form>
+            </div>
+        </div>
+    </nav> 
+    <div class="container-fluid  ">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\Courses Details 10 x 20 hoding Final-01.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\post Courses vise Campuse Web Sliders-01.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\post Courses vise Campuse Web Sliders-02.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\post Courses vise Campuse Web Sliders-03.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\post Courses vise Campuse Web Sliders-04.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\post Courses vise Campuse Web Sliders-05.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\Road Plant Banoqabil 2.0 002-02 (4).jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\BANO QABIL PHARMACIST Website Banner 12DEC2023-01.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="d:\Kanwal-Hussain\Final-Submission\Images\623A1450.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div> </br>
+    <!-- Our Courses Slider -->
+    <div id="our-courses">
+    <center><h3 style="color: #5d867d;"> <b><u>Our Courses</b></h3></u></center> <hr>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="card1"><h4 style="color: #5d867d;"> AMAZON FBA VIRTUAL ASSISTANT</h4></br><p>Amazon FBA is a highly lucrative freelancing domain in which you can maintain long term relationships with your clients</p></div>
+            <div class="card1"><h4 style="color: #5d867d;"> WEB DEVELOPER</h4></br><p>MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js.</p></div>
+            <div class="card1"><h4 style="color: #5d867d;"> APP DEVELOPER</h4></br><p>pen-source, and object oriented programming language that comprises a range of useful features for a software developer</p></div>
+            <div class="card1"><h4 style="color: #5d867d;"> GRAPHIC DESIGNER</h4></br><p>develop design sense in trainees with the help of theoretical concepts and practices</p></div>
+            <div class="card1"><h4 style="color: #5d867d;"> DIGITAL MARKETER</h4></br><p>Understand the role of both digital and conventional marketing; distinguishing the intersection of online and offline strategies</p></div>
+            <div class="card1"><h4 style="color: #5d867d;"> FREELANCER</h4></br><p>Assess all available methods to determine the best possible online strategy</p></div>
+        </div>
+        <div class="controls">
+            <button class="prev-btn">Prev</button>
+            <button class="next-btn">Next</button>
+        </div>
+    </div>
+</div>
+   
+    <!-- WHO WE ARE Coding -->
+
+    <div class="who-we-are">
+        <center>
+            <div class="underline-img">
+                <h2> <u>WHO WE ARE </u></h2>
+                <img src="Images/text-logo.png" alt="underline-image">
+            </div>
+            <p> Alkhidmat was founded on a principle to serve humanity without considering anyone’s religion, color,
+                caste, or race.
+                From Karachi to Chitral to the deserts of Thar, Alkhidmat contains the largest volunteer network. In
+                times of disaster or hardship or any
+                national emergency, Alkhidmat is considered as the most responsive network after the Army to provide
+                relief to the people. From raising orphans
+                to provide relief in any disaster to arranging affordable healthcare & clean water.</p>
+        </center>
+
+
+        <div class="gallery">
+
+            <div class="content">
+                <img class="image" src="Images/CleanWater.png" alt="">
+            </div>
+            <div class="content">
+                <img class="image" src="Images/CommunityService.png" alt="">
+            </div>
+
+            <div class="content">
+                <img class="image" src="Images/Disaster.png" alt="">
+            </div>
+
+            <div class="content">
+                <img class="image" src="Images/Education.png" alt="">
+            </div>
+
+            <div class="content">
+                <img class="image" src="Images/Health.png" alt="">
+            </div>
+            <div class="content">
+                <img class="image" src="Images/Mawakhat.png" alt="">
+            </div>
+            <div class="content">
+                <img class="image" src="Images/Orphan.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <!-- Footer with links -->
+        <div class="card-container">
+            <div class="BQ-Footer">
+                <div class="card" style="width: 20rem;">
+                    <img src="Images/Footer-white-logo.png" class="card-img-top" alt="footer">
+                    <div class="card-body">
+                        <p class="card-text">"Bano Qabil is the Largest IT scholarship Program for the Youth of Karachi
+                            offering advanced IT courses
+                            packed with the latest technologies".</p>
+                        <div class="social-icons">
+                            <a href="https://twitter.com/" target="_blank" class="twitter" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="linkedin" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" class="facebook" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="BQ-Footer-2">
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                        <h3 class="OUR PROGRAMS"><u>OUR PROGRAMS</u></h3></br>
+                        <h5 class="card-text">BANO QABIL 2.0 </h5>
+                        <hr>
+                        <img src="Images/Footer-learning.jpeg" class="card-img-bottom" alt="footer-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="BQ-Footer-3">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h3 class="OUR PROGRAMS"><u>CONTACT US</u></h3></br>
+                        <ul class="card-text">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h5>ADDRESS</h5>
+                                <p>501,Quaideen Colony, Karachi</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <h5>PHONE</h5>
+                                <p>021 38282263</p>
+                            </li>
+                            <li>
+                                <i class="fab fa-whatsapp"></i>
+                                <h5>WHATSAPP</h5>
+                                <p>0317-8226242</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <h5>TEACH WITH US</h5>
+                                <p>JOb Portal</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- bottom fixed strip -->
+        <div class="footer-strip">
+            <p>© 2023 Copyright: Bano Qabil , All rights Reserved. Powered by Alkhidmat Karachi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"> </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

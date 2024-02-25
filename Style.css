@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  margin-left: -20px;
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: 'Arial', sans-serif;
+  /* overflow: hidden;  */
+}
+
+/* Whatsapp logo styling */
+.whatsapp-icon {
+  font-size: 5px;
+  /* Adjust the font size */
+  color: #000000;
+  /* WhatsApp green color */
+  margin-right: 2px;
+  /* Adjust spacing between icon and text */
+}
+
+.moving-text-container {
+  position: relative;
+  z-index: 3;
+}
+
+.moving-text {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  white-space: nowrap;
+  /* Prevent text from breaking into multiple lines */
+  animation: moveText 20s linear infinite;
+  /* Adjust the duration as needed */
+  color: black;
+  font-size: small;
+}
+
+.strip {
+  background-color: rgb(157, 223, 223);
+  /* Set the background color of the strip to green */
+  height: 5%;
+  /* Set the height of the strip as needed */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.1);
+  /* Adjust the shadow values */
+}
+
+.navbar {
+  background-color: rgb(83, 150, 136);
+  color: aliceblue;
+  position: fixed;
+  font-size: medium;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.dropdown-item {
+  font-size: x-small;
+}
+
+.dropdown-item:hover {
+  color: green;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+  }
+
+  to {
+    transform: translateX(-100%);
+    /* Move to the left, off-screen */
+  }
+}
+
+/* Responsive design using media queries */
+@media (max-width: 600px) {
+  .moving-text {
+    font-size: 12px;
+    /* Adjust the font size for smaller screens */
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  /* Adjust the font size for smaller screens */
+
+  .strip {
+    height: 10%;
+    /* Increase the height for smaller screens */
+  }
+}
+
+.carousel-item {
+  display: block;
+  width: 100%;
+  transition: width 2s;
+}
+
+/* Animation for larger screens */
+@media (min-width: 992px) {
+  .carousel-item {
+    animation-name: example;
+    animation-duration: 20s;
+  }
+}
+
+/* Keyframes for animation */
+@keyframes example {
+  0% {
+    width: 100%;
+  }
+
+  /* Adjust initial width for all screen sizes */
+  25% {
+    width: 105%;
+  }
+
+  /* Adjust width at 25% for larger screens */
+  50% {
+    width: 109%;
+  }
+
+  /* Adjust width at 50% for larger screens */
+  100% {
+    width: 100%;
+  }
+
+  /* Adjust final width for all screen sizes */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 991px) {
+  .carousel-item {
+    animation-name: example;
+    animation-duration: 20s;
+    /* Add different keyframes or adjust animation properties for smaller screens if needed */
+  }
+}
+
+.introduction-head {
+  position: relative;
+  color: green;
+  /* Set the color of the text to green */
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.introduction-head::after {
+  text-decoration: underline;
+  background-color: black;
+  /* Set the color of the underline to black */
+}
+
+.intro-body {
+  font-size: small;
+  margin: 20px;
+  justify-content: right;
+  margin-right: 100px;
+}
+
+.intro-body:hover {
+  color: rgb(83, 150, 136);
+
+}
+
+.Dir-msg {
+  position: relative;
+  color: rgb(13, 14, 13);
+  /* Set the color of the text to green */
+  text-decoration: underline;
+  margin: 10px;
+  letter-spacing: 0.08em;
+}
+
+.Dir-msg::after {
+  text-decoration: underline;
+  background-color: black;
+  /* Set the color of the underline to black */
+}
+.footer-strip {
+  color: white;
+  background-color: rgb(83, 150, 136);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: -10px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}

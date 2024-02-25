@@ -1,0 +1,20 @@
+body{
+    margin:1%;
+    padding:0;
+}
+img{
+    width:100%;
+    height:100%;
+    padding: 1%
+   
+}
+@mediascreen and (min-width: 720px;){
+    body{
+        background-colour: white;
+    }
+}
+h2{
+    font-color: #338069;
+    font-size: 300%;
+    margin: 10%;
+         }
