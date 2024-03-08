@@ -110,7 +110,7 @@ body {
 @media (min-width: 992px) {
   .carousel-item {
     animation-name: example;
-    animation-duration: 20s;
+    animation-duration: 10s;
   }
 }
 
@@ -142,7 +142,7 @@ body {
 @media (max-width: 991px) {
   .carousel-item {
     animation-name: example;
-    animation-duration: 20s;
+    animation-duration: 10s;
     /* Add different keyframes or adjust animation properties for smaller screens if needed */
   }
 }
